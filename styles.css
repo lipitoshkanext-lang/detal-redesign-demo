@@ -288,39 +288,121 @@ a {
 }
 
 .service-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  width: 100%;
   min-height: 370px;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-align: left;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
-.service-card img {
+.service-card:hover,
+.service-card:focus-visible,
+.service-card.is-active {
+  border-color: rgba(0, 124, 137, 0.55);
+  box-shadow: 0 16px 44px rgba(22, 32, 42, 0.12);
+  transform: translateY(-2px);
+  outline: 0;
+}
+
+.service-card.is-active {
+  background: linear-gradient(180deg, #ffffff 0%, #f5fbfa 100%);
+}
+
+.service-visual {
+  display: grid;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  place-items: center;
+  background:
+    linear-gradient(135deg, rgba(0, 124, 137, 0.1), rgba(216, 95, 82, 0.1)),
+    #f8fbfb;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-visual svg {
+  width: min(132px, 50%);
+  height: auto;
+  fill: none;
+  stroke: var(--teal-dark);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5;
+}
+
+.service-card.is-active .service-visual svg {
+  stroke: var(--coral-dark);
 }
 
 .service-card div {
   padding: 24px;
 }
 
-.service-card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 28px;
-  background: linear-gradient(135deg, #f7fbfa, #fff7f0);
+.price-from {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 7px 10px;
+  color: var(--coral-dark);
+  font-size: 13px;
+  font-weight: 800;
+  background: #fff4ef;
+  border-radius: 8px;
 }
 
-.service-card-text svg {
-  width: 44px;
-  height: 44px;
-  color: var(--coral);
+.service-price-panel {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(320px, 1fr) auto;
+  gap: 24px;
+  align-items: start;
+  margin-top: 22px;
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 12px 36px rgba(22, 32, 42, 0.08);
 }
 
-.service-card-text div {
-  padding: 0;
+.service-price-panel h3 {
+  margin: 0;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.08;
+}
+
+.service-price-panel p {
+  color: var(--muted);
+}
+
+.service-price-list {
+  display: grid;
+  gap: 10px;
+}
+
+.service-price-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+  min-height: 50px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-price-item span {
+  color: var(--muted);
+}
+
+.service-price-item strong {
+  color: var(--coral-dark);
+  white-space: nowrap;
 }
 
 .about,
@@ -392,11 +474,18 @@ a {
   width: 76px;
   height: 76px;
   place-items: center;
-  color: var(--paper);
-  font-size: 24px;
-  font-weight: 800;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+}
+
+.doctor-avatar svg {
+  width: 54px;
+  height: 54px;
+  fill: none;
+  stroke: var(--paper);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5;
 }
 
 .doctor-card span {
@@ -647,6 +736,7 @@ svg {
   .hero-panel,
   .intro-section,
   .service-grid,
+  .service-price-panel,
   .doctor-grid,
   .about,
   .appointment,
@@ -720,6 +810,11 @@ svg {
 
   .service-card {
     min-height: 0;
+  }
+
+  .service-price-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .price-row {

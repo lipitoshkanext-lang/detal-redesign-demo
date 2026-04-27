@@ -101,49 +101,107 @@
             Вместо длинного списка страниц пациент видит, с какой задачей можно обратиться, и быстро переходит к записи.
           </p>
         </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <img src="assets/service-1.jpg" alt="">
+        <div class="service-grid" role="list" aria-label="Выбор услуги">
+          <button class="service-card is-active" type="button" data-service="therapy" role="listitem">
+            <span class="service-visual" aria-hidden="true">
+              <svg viewBox="0 0 120 96" focusable="false">
+                <circle cx="60" cy="31" r="18"></circle>
+                <path d="M25 84c5-22 18-34 35-34s30 12 35 34"></path>
+                <path d="M82 20c9 6 15 16 15 28 0 22-17 39-37 39S23 70 23 48c0-12 6-22 15-28"></path>
+              </svg>
+            </span>
             <div>
               <h3>Лечение зубов</h3>
-              <p>Кариес, некариозные поражения, чувствительность, восстановление зубов и консультации терапевта.</p>
+              <p>Кариес, чувствительность, восстановление зубов, лечение каналов и консультации терапевта.</p>
+              <span class="price-from">от 500 руб.</span>
             </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/service-2.jpg" alt="">
+          </button>
+          <button class="service-card" type="button" data-service="prosthetics" role="listitem">
+            <span class="service-visual" aria-hidden="true">
+              <svg viewBox="0 0 120 96" focusable="false">
+                <circle cx="60" cy="31" r="18"></circle>
+                <path d="M25 84c5-22 18-34 35-34s30 12 35 34"></path>
+                <path d="M40 70h40"></path>
+                <path d="M48 78h24"></path>
+              </svg>
+            </span>
             <div>
               <h3>Протезирование</h3>
-              <p>Ортопедическая стоматология для восстановления функции и эстетики после диагностики у врача.</p>
+              <p>Коронки, вкладки, виниры, съемные протезы и протезирование на имплантатах.</p>
+              <span class="price-from">от 500 руб.</span>
             </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/service-3.jpg" alt="">
+          </button>
+          <button class="service-card" type="button" data-service="surgery" role="listitem">
+            <span class="service-visual" aria-hidden="true">
+              <svg viewBox="0 0 120 96" focusable="false">
+                <circle cx="60" cy="31" r="18"></circle>
+                <path d="M25 84c5-22 18-34 35-34s30 12 35 34"></path>
+                <path d="M80 16l18 18"></path>
+                <path d="M98 16L80 34"></path>
+              </svg>
+            </span>
             <div>
               <h3>Имплантация и хирургия</h3>
-              <p>Удаление зубов, хирургические манипуляции и имплантация с современными методами обезболивания.</p>
+              <p>Удаление зубов, хирургические манипуляции, синус-лифтинг и дентальная имплантация.</p>
+              <span class="price-from">от 1 000 руб.</span>
             </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/service-4.jpg" alt="">
+          </button>
+          <button class="service-card" type="button" data-service="whitening" role="listitem">
+            <span class="service-visual" aria-hidden="true">
+              <svg viewBox="0 0 120 96" focusable="false">
+                <circle cx="60" cy="31" r="18"></circle>
+                <path d="M25 84c5-22 18-34 35-34s30 12 35 34"></path>
+                <path d="M90 13v14"></path>
+                <path d="M83 20h14"></path>
+              </svg>
+            </span>
             <div>
               <h3>Отбеливание</h3>
-              <p>Домашние и внутриклинические варианты отбеливания. Подходящий способ подбирает врач.</p>
+              <p>Домашние капы и внутриклиническое отбеливание. Способ подбирает врач.</p>
+              <span class="price-from">от 13 500 руб.</span>
             </div>
-          </article>
-          <article class="service-card service-card-text">
-            <i data-lucide="smile-plus"></i>
+          </button>
+          <button class="service-card" type="button" data-service="ortho" role="listitem">
+            <span class="service-visual" aria-hidden="true">
+              <svg viewBox="0 0 120 96" focusable="false">
+                <circle cx="60" cy="31" r="18"></circle>
+                <path d="M25 84c5-22 18-34 35-34s30 12 35 34"></path>
+                <path d="M36 61h48"></path>
+                <path d="M42 57v8M54 57v8M66 57v8M78 57v8"></path>
+              </svg>
+            </span>
             <div>
               <h3>Ортодонтия</h3>
-              <p>Консультации по исправлению прикуса и брекет-системам. Детали лечения лучше уточнять на очном приеме.</p>
+              <p>Консультации, брекет-системы, ретейнеры, съемные аппараты и элайнеры.</p>
+              <span class="price-from">от 1 500 руб.</span>
             </div>
-          </article>
-          <article class="service-card service-card-text">
-            <i data-lucide="baby"></i>
+          </button>
+          <button class="service-card" type="button" data-service="kids" role="listitem">
+            <span class="service-visual" aria-hidden="true">
+              <svg viewBox="0 0 120 96" focusable="false">
+                <circle cx="60" cy="29" r="16"></circle>
+                <path d="M29 84c5-20 16-31 31-31s26 11 31 31"></path>
+                <path d="M40 25c7-14 33-14 40 0"></path>
+              </svg>
+            </span>
             <div>
               <h3>Детская стоматология</h3>
-              <p>Детский прием с акцентом на спокойную адаптацию ребенка и бережное общение.</p>
+              <p>Профилактика, лечение временных зубов, гигиена, фторирование и простое удаление.</p>
+              <span class="price-from">от 600 руб.</span>
             </div>
-          </article>
+          </button>
+        </div>
+        <div class="service-price-panel" id="service-price-panel" aria-live="polite">
+          <div>
+            <p class="eyebrow">Цены по выбранной услуге</p>
+            <h3 data-price-heading>Лечение зубов</h3>
+            <p data-price-note>Фрагмент реального прайса. Перед запуском стоит сверить дату обновления и полный перечень услуг.</p>
+          </div>
+          <div class="service-price-list" data-price-list></div>
+          <a class="button button-outline" href="#appointment">
+            <i data-lucide="calendar-plus"></i>
+            Записаться на консультацию
+          </a>
         </div>
       </section>
 
@@ -186,7 +244,12 @@
         </div>
         <div class="doctor-grid">
           <article class="doctor-card">
-            <div class="doctor-avatar">СС</div>
+            <div class="doctor-avatar" aria-hidden="true">
+              <svg viewBox="0 0 96 96" focusable="false">
+                <circle cx="48" cy="31" r="18"></circle>
+                <path d="M18 84c6-23 17-35 30-35s24 12 30 35"></path>
+              </svg>
+            </div>
             <div>
               <h3>Сауриди Станислав Станиславович</h3>
               <p>Основатель клиники, главный врач. Врач-стоматолог ортопед, терапевт. Врач высшей категории.</p>
@@ -194,7 +257,12 @@
             </div>
           </article>
           <article class="doctor-card">
-            <div class="doctor-avatar">ОС</div>
+            <div class="doctor-avatar" aria-hidden="true">
+              <svg viewBox="0 0 96 96" focusable="false">
+                <circle cx="48" cy="31" r="18"></circle>
+                <path d="M18 84c6-23 17-35 30-35s24 12 30 35"></path>
+              </svg>
+            </div>
             <div>
               <h3>Сауриди Ольга</h3>
               <p>Врач-стоматолог терапевт, ортопед. Образование: Кубанская Государственная Медицинская Академия.</p>
