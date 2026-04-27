@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо редизайна сайта Дентал-Студии Д'еталь</title>
+    <meta
+      name="description"
+      content="Инициативный демонстрационный редизайн сайта стоматологической клиники Дентал-Студия Д'еталь в Краснодаре."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="На главную">
+        <img src="assets/logo.png" alt="Дентал-Студия Д'еталь">
+      </a>
+      <button class="icon-button menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+      <nav class="main-nav" data-nav aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#about">О клинике</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#prices">Прайс</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="call-link" href="tel:+79284117772">
+        <i data-lucide="phone"></i>
+        <span>8 928 411-77-72</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="demo-label">Инициативный редизайн. Не официальный сайт клиники.</p>
+          <h1 id="hero-title">Дентал-Студия Д'еталь</h1>
+          <p class="hero-lead">
+            Стоматология в Краснодаре: лечение, протезирование, имплантация, ортодонтия и детский прием в одной клинике на ул. 9 Мая.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#appointment">
+              <i data-lucide="calendar-check"></i>
+              Записаться на консультацию
+            </a>
+            <a class="button button-secondary" href="#services">
+              <i data-lucide="list-checks"></i>
+              Выбрать услугу
+            </a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Коротко о клинике">
+          <div>
+            <span>С 2009 года</span>
+            <p>клиника работает в Краснодаре</p>
+          </div>
+          <div>
+            <span>8 направлений</span>
+            <p>от терапии до детской стоматологии</p>
+          </div>
+          <div>
+            <span>Центр города</span>
+            <p>ул. 9 Мая 48/1, корпус 1</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-section" aria-label="Быстрый выбор">
+        <div class="quick-card">
+          <i data-lucide="shield-check"></i>
+          <h2>Понятно, безопасно, без лишних обещаний</h2>
+          <p>
+            На первом экране сразу показаны ключевые услуги, адрес и способ связи. Пациенту не нужно искать, чем занимается клиника и как попасть на консультацию.
+          </p>
+        </div>
+        <div class="quick-card">
+          <i data-lucide="map-pin"></i>
+          <h2>Контакты всегда рядом</h2>
+          <p>
+            Телефон, адрес и форма записи вынесены в заметные точки сайта, чтобы пользователь мог связаться с клиникой из любого важного раздела.
+          </p>
+        </div>
+        <div class="quick-card">
+          <i data-lucide="badge-info"></i>
+          <h2>Доверие через факты</h2>
+          <p>
+            Используются только данные с текущего сайта: год начала работы, направления, врачи, адрес, телефоны и отдельные позиции прайса.
+          </p>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Услуги клиники</p>
+          <h2>Основные направления собраны в понятную витрину</h2>
+          <p>
+            Вместо длинного списка страниц пациент видит, с какой задачей можно обратиться, и быстро переходит к записи.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="assets/service-1.jpg" alt="">
+            <div>
+              <h3>Лечение зубов</h3>
+              <p>Кариес, некариозные поражения, чувствительность, восстановление зубов и консультации терапевта.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="assets/service-2.jpg" alt="">
+            <div>
+              <h3>Протезирование</h3>
+              <p>Ортопедическая стоматология для восстановления функции и эстетики после диагностики у врача.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="assets/service-3.jpg" alt="">
+            <div>
+              <h3>Имплантация и хирургия</h3>
+              <p>Удаление зубов, хирургические манипуляции и имплантация с современными методами обезболивания.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="assets/service-4.jpg" alt="">
+            <div>
+              <h3>Отбеливание</h3>
+              <p>Домашние и внутриклинические варианты отбеливания. Подходящий способ подбирает врач.</p>
+            </div>
+          </article>
+          <article class="service-card service-card-text">
+            <i data-lucide="smile-plus"></i>
+            <div>
+              <h3>Ортодонтия</h3>
+              <p>Консультации по исправлению прикуса и брекет-системам. Детали лечения лучше уточнять на очном приеме.</p>
+            </div>
+          </article>
+          <article class="service-card service-card-text">
+            <i data-lucide="baby"></i>
+            <div>
+              <h3>Детская стоматология</h3>
+              <p>Детский прием с акцентом на спокойную адаптацию ребенка и бережное общение.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="about-media">
+          <img src="assets/slide1.png" alt="Интерьер и оборудование стоматологической клиники">
+          <img src="assets/slide4.png" alt="Стоматологический прием">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">О клинике</p>
+          <h2>Опора на опыт, оборудование и аккуратную коммуникацию</h2>
+          <p>
+            По данным текущего сайта, Дентал-Студия Д'еталь работает в Краснодаре с 2009 года. Клиника рассказывает о современном эндодонтическом оборудовании, стерильности инструментов, сотрудничестве с DENTSPLY Sirona и регулярном обучении врачей.
+          </p>
+          <div class="fact-list">
+            <div>
+              <i data-lucide="sparkles"></i>
+              <span>Программа анти-СПИД и анти-гепатит указана на текущем сайте</span>
+            </div>
+            <div>
+              <i data-lucide="graduation-cap"></i>
+              <span>Врачи посещают профильные семинары и конгрессы</span>
+            </div>
+            <div>
+              <i data-lucide="parking-circle"></i>
+              <span>На сайте заявлены удобная парковка и расположение в центре Краснодара</span>
+            </div>
+          </div>
+          <a class="button button-outline" href="#contacts">
+            <i data-lucide="map"></i>
+            Как добраться
+          </a>
+        </div>
+      </section>
+
+      <section class="section doctors" id="doctors">
+        <div class="section-heading">
+          <p class="eyebrow">Команда</p>
+          <h2>Врачей лучше показывать как причину доверия, а не как боковой блок</h2>
+        </div>
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <div class="doctor-avatar">СС</div>
+            <div>
+              <h3>Сауриди Станислав Станиславович</h3>
+              <p>Основатель клиники, главный врач. Врач-стоматолог ортопед, терапевт. Врач высшей категории.</p>
+              <span>Данные взяты с текущего сайта</span>
+            </div>
+          </article>
+          <article class="doctor-card">
+            <div class="doctor-avatar">ОС</div>
+            <div>
+              <h3>Сауриди Ольга</h3>
+              <p>Врач-стоматолог терапевт, ортопед. Образование: Кубанская Государственная Медицинская Академия.</p>
+              <span>Данные взяты с текущего сайта</span>
+            </div>
+          </article>
+          <article class="doctor-card muted-card">
+            <i data-lucide="users"></i>
+            <h3>Остальных специалистов стоит оформить отдельными карточками</h3>
+            <p>На текущем сайте есть список сотрудников. В полном редизайне можно добавить фото, специализацию, опыт, расписание и форму записи к врачу.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section prices" id="prices">
+        <div class="section-heading">
+          <p class="eyebrow">Прайс</p>
+          <h2>Фрагмент цен превращен в удобную таблицу</h2>
+          <p>Цены ниже перенесены из текущего прайса как пример подачи. Перед запуском нужно сверить актуальность.</p>
+        </div>
+        <div class="price-table" role="table" aria-label="Фрагмент прайса">
+          <div class="price-row price-head" role="row">
+            <span role="columnheader">Услуга</span>
+            <span role="columnheader">Цена</span>
+          </div>
+          <div class="price-row" role="row">
+            <span role="cell">Первичная консультация врача-стоматолога-терапевта</span>
+            <strong role="cell">500 руб.</strong>
+          </div>
+          <div class="price-row" role="row">
+            <span role="cell">Проводниковая анестезия</span>
+            <strong role="cell">1 500 руб.</strong>
+          </div>
+          <div class="price-row" role="row">
+            <span role="cell">Ультразвук + Air Flow, все зубы</span>
+            <strong role="cell">5 000 руб.</strong>
+          </div>
+          <div class="price-row" role="row">
+            <span role="cell">Профессиональное отбеливание, домашние капы</span>
+            <strong role="cell">13 500 руб.</strong>
+          </div>
+          <div class="price-row" role="row">
+            <span role="cell">Профессиональное отбеливание в клинике</span>
+            <strong role="cell">18 000 руб.</strong>
+          </div>
+        </div>
+        <p class="price-note">
+          Для боевого сайта лучше сделать полный прайс с категориями, поиском и датой последнего обновления.
+        </p>
+      </section>
+
+      <section class="section appointment" id="appointment">
+        <div class="appointment-copy">
+          <p class="eyebrow">Запись</p>
+          <h2>Форма снижает трение, но не притворяется настоящей CRM</h2>
+          <p>
+            В демо форма показывает, как может выглядеть быстрый сценарий записи. В рабочей версии ее можно подключить к почте, мессенджеру, CRM или коллтрекингу.
+          </p>
+        </div>
+        <form class="appointment-form" data-appointment-form>
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как к вам обращаться" required>
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 ___ ___-__-__" required>
+          </label>
+          <label>
+            Что беспокоит
+            <select name="service">
+              <option>Нужна консультация</option>
+              <option>Лечение зубов</option>
+              <option>Протезирование</option>
+              <option>Имплантация или хирургия</option>
+              <option>Детский прием</option>
+            </select>
+          </label>
+          <label>
+            Комментарий
+            <textarea name="message" rows="4" placeholder="Например: удобное время, срочность, вопрос к врачу"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">
+            <i data-lucide="send"></i>
+            Отправить заявку
+          </button>
+          <p class="form-note">Демо-форма не отправляет данные владельцу клиники.</p>
+        </form>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="contact-card">
+          <p class="eyebrow">Контакты</p>
+          <h2>Дентал-Студия Д'еталь</h2>
+          <ul>
+            <li>
+              <i data-lucide="map-pin"></i>
+              ул. 9 Мая 48/1, корпус 1, помещение 38, Краснодар
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <a href="tel:+79284117772">8 928 411-77-72</a>, <a href="tel:+79286641776">8 928 664-17-76</a>
+            </li>
+            <li>
+              <i data-lucide="mail"></i>
+              <a href="mailto:detal.dental@gmail.com">detal.dental@gmail.com</a>
+            </li>
+          </ul>
+          <div class="contact-actions">
+            <a class="button button-primary" href="tel:+79284117772">
+              <i data-lucide="phone-call"></i>
+              Позвонить
+            </a>
+            <a class="button button-outline" href="https://yandex.ru/maps/?text=%D1%83%D0%BB.%209%20%D0%9C%D0%B0%D1%8F%2048%2F1%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80" target="_blank" rel="noreferrer">
+              <i data-lucide="navigation"></i>
+              Открыть карту
+            </a>
+          </div>
+        </div>
+        <div class="map-placeholder" aria-label="Место для карты">
+          <i data-lucide="map-pinned"></i>
+          <p>Здесь можно подключить интерактивную карту и маршрут от ближайших ориентиров.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Демо редизайна создано в ознакомительных целях. Это не официальный сайт Дентал-Студии Д'еталь.</p>
+      <a href="#top">Наверх</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>
+      Демо: заявка не отправлена. В рабочей версии здесь будет интеграция с клиникой.
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
